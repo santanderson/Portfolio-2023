@@ -23,7 +23,6 @@ import LinkedinIcon from './icons/LinkedinIcon.vue';
         left: 20px;
         top: 0;
         height: 100%;
-
     }
 
     header nav {
