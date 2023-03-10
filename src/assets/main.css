@@ -22,9 +22,11 @@ main{
 }
 
 main section {
-    padding: 0 320px;
+    padding: 200px 320px 0;
     display: flex;
+    height: inherit;
     flex-flow: column nowrap;
+    overflow-y: scroll;
     gap: 30px;
 }
 
@@ -47,4 +49,96 @@ main section p{
 
 main section p span{
     color: rgb(255, 206, 47);
+}
+
+main section .projectsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+main section .projectsContainer div a {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+main section .projectsContainer div a .info {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    padding: 20px;
+    visibility: hidden;
+}
+
+main section .projectsContainer div a:hover .info {
+    visibility: visible;
+}
+
+main section .projectsContainer div a .info h3{
+    color: rgb(255, 206, 47);
+}
+
+main section .projectsContainer div a img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    main h1 {
+        font-size: 100px;
+        line-height: 110px;
+    }
+    main section {
+        padding: 200px 160px 0;
+    }
+    main section h2 {
+        font-size: 43px;
+    }
+    main section .projectsContainer {
+        gap: 70px;
+    }
+    
+    main section .projectsContainer div a {
+        width: 210px;
+        height: 110px;
+    }
+}
+@media (max-width: 800px) {
+    main h1 {
+        font-size: 70px;
+        line-height: 80px;
+        padding-left: 90px;
+    }
+    main section {
+        padding: 200px 90px 0;
+    }
+    main section h2 {
+        font-size: 33px;
+    }
+    main section p {
+        font-size: 18px;
+    }
+    main section .projectsContainer {
+        gap: 50px;
+    }
+    
+    main section .projectsContainer div a {
+        width: 200px;
+        height: 100px;
+    }
 }
