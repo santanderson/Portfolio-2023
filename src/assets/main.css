@@ -22,12 +22,16 @@ main{
 }
 
 main section {
-    padding: 200px 320px 0;
+    padding: 200px 320px;
     display: flex;
     height: inherit;
     flex-flow: column nowrap;
     overflow-y: scroll;
     gap: 30px;
+}
+
+main section::-webkit-scrollbar {
+    display: none;
 }
 
 main h1{
@@ -74,7 +78,7 @@ main section .projectsContainer div a .info {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     top: 0;
     left: 0;
@@ -104,7 +108,7 @@ main section .projectsContainer div a img{
         line-height: 110px;
     }
     main section {
-        padding: 200px 160px 0;
+        padding: 200px 160px;
     }
     main section h2 {
         font-size: 43px;
@@ -122,10 +126,10 @@ main section .projectsContainer div a img{
     main h1 {
         font-size: 70px;
         line-height: 80px;
-        padding-left: 90px;
+        padding-left: 100px;
     }
     main section {
-        padding: 200px 90px 0;
+        padding: 200px 90px;
     }
     main section h2 {
         font-size: 33px;

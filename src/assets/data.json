@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "name": "Interface do Spotify",
+            "url": "https://santanderson.github.io/Spotify-Interface/",
+            "imgPath": "./src/assets/images/spotify-interface.png",
+            "description": "Cópia da ui do App Spotify"
+        },
+        {
+            "name": "Interface do Google",
+            "url": "https://santanderson.github.io/Google-Interface/",
+            "imgPath": "./src/assets/images/google-interface.png",
+            "description": "Cópia da ui do google.com"
+        }
+    ]
+}

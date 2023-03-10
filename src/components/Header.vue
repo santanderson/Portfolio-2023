@@ -10,9 +10,9 @@ import LinkedinIcon from './icons/LinkedinIcon.vue';
 <template>
     <header>
         <nav>
-            <RouterLink to="/"><HomeIconVue class="icon"/> Home</RouterLink>
-            <RouterLink to="/about"><AboutIcon class="icon"/> About</RouterLink>
-            <RouterLink to="/works"><ProjectsIcon class="icon"/> Works</RouterLink>
+            <RouterLink to="/"><HomeIconVue class="icon"/></RouterLink>
+            <RouterLink to="/about"><AboutIcon class="icon"/></RouterLink>
+            <RouterLink to="/works"><ProjectsIcon class="icon"/></RouterLink>
         </nav>
     </header>
 </template>
@@ -20,7 +20,7 @@ import LinkedinIcon from './icons/LinkedinIcon.vue';
 <style>
     header {
         position: absolute;
-        left: 20px;
+        left: 40px;
         top: 0;
         height: 100%;
     }
@@ -47,5 +47,8 @@ import LinkedinIcon from './icons/LinkedinIcon.vue';
 
     .icon {
         width: 30px;
+    }
+    header nav a:hover{
+        color: rgb(255, 206, 47);
     }
 </style>

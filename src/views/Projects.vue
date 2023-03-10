@@ -1,36 +1,10 @@
 <script setup>
-const projects = [
-    {
-        name: 'Google Interface',
-        img: './src/assets/images/google-interface.png',
-        link: 'https://santanderson.github.io/Google-Interface/',
-        desc: 'Cópia da ui do google.com'
-    },
-    {
-        name: 'Google Interface',
-        img: './src/assets/images/google-interface.png',
-        link: 'https://santanderson.github.io/Google-Interface/',
-        desc: 'Cópia da ui do google.com'
-    },
-    {
-        name: 'Google Interface',
-        img: './src/assets/images/google-interface.png',
-        link: 'https://santanderson.github.io/Google-Interface/',
-        desc: 'Cópia da ui do google.com'
-    },
-    {
-        name: 'Google Interface',
-        img: './src/assets/images/google-interface.png',
-        link: 'https://santanderson.github.io/Google-Interface/',
-        desc: 'Cópia da ui do google.com'
-    },
-    {
-        name: 'Google Interface',
-        img: './src/assets/images/google-interface.png',
-        link: 'https://santanderson.github.io/Google-Interface/',
-        desc: 'Cópia da ui do google.com'
-    }
-]
+import data from "../assets/data.json";
+
+console.log(data.projects)
+
+const projects = data.projects
+
 </script>
 
 <template>
@@ -41,12 +15,12 @@ const projects = [
             <div class="projectsContainer">
 
                 <div v-for="project in projects">
-                    <a :href="project.link" target="_blank">
+                    <a :href="project.url" target="_blank">
                         <div class="info">
                             <h3>{{ project.name }}</h3>
-                            <span>{{project.desc}}</span>
+                            <span>{{project.description}}</span>
                         </div>
-                        <img :src="project.img" :alt="project.name"/>
+                        <img :src="project.imgPath" :alt="project.name"/>
                     </a>
                 </div>
 
